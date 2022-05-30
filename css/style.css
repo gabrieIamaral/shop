@@ -37,6 +37,7 @@ body {
   background-color: var(--background-color);
   -ms-overflow-style: none;
   scrollbar-width: none;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -65,7 +66,7 @@ img {
 }
 
 .nav {
-  border-top: 0.1px solid var(--light-color);
+  border-top: .1px solid var(--light-color);
 }
 
 .search-icon,
@@ -82,6 +83,7 @@ img {
 .ri-search-line,
 .ri-shopping-bag-2-line {
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .search {
@@ -191,6 +193,78 @@ img {
   position: absolute;
   top: -25%;
   left: 45%;
+}
+
+.cart-toggle {
+  padding: 1.4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100vh;
+  z-index: 5;
+  visibility: hidden;
+}
+
+.cart-active {
+  visibility: visible;
+  transition: .3s ease;
+}
+
+.cart-toggle div div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  margin-bottom: 1rem;
+}
+
+.cart-toggle div div:nth-child(2),
+.cart-toggle div div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  margin-block: 1.2rem;
+}
+
+.ri-close-fill {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.cart-toggle h3 {
+  font-size: 1.4rem;
+}
+
+.cart-toggle .product-name {
+  font-size: 1rem;
+}
+
+.cart-toggle .price {
+  padding: 0;
+}
+
+.cart-btn {
+  display: block;
+  padding: 0.8em 1em;
+  margin: 1.5rem 0;
+
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  color: var(--light-color);
+
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cart-btn:hover {
+  border: 2px solid var(--accent-color-hover);
+  background-color: var(--accent-color-hover);
+  color: var(--light-color);
+  transition: 0.3s ease;
 }
 
 /* End of Header */
