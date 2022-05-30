@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
   <head>
     <meta charset="UTF-8">
@@ -10,19 +10,17 @@
     <title>A Suit Shop</title>
   </head>
 
-  <body>
+  <body id="body">
+    <!-- Header -->
     <header id="header">
       <div class="top-menu">
         <div class="search-and-menu">
-          <a type="button" class="burger-icon">
-            <i class="ri-menu-line"></i>
-          </a>
-          <!-- <a href="#" type="button" class="close-burger-icon">
-            <i class="ri-close-line"></i>
-          </a> -->
           <a type="button" class="search-icon">
             <i class="ri-search-line"></i>
           </a>
+          <div class="search search-icon">
+            <input type="search" name="search" id="search" placeholder="Search">
+          </div>
         </div>
         <h1>Suits</h1>
         <div class="cart">
@@ -48,6 +46,8 @@
         </ul>
       </div>
     </header>
+    <!-- End Header -->
+    <!-- Hero Section -->
     <section id="hero">
       <div class="hero-text">
         <h2>The elegance and beauty of our suits.</h2>
@@ -56,6 +56,8 @@
         </a>
       </div>
     </section>
+    <!-- End Hero Section -->
+    <!-- Product Slider -->
     <section id="product-slider">
       <div>
         <h2 class="slider-title">Our Best</h2>
@@ -69,23 +71,29 @@
         </div>
       </div>
     </section>
+    <!-- End Product Slider -->
+    <!-- Customer Comments -->
     <section id="reviews">
       <h2 class="slider-title">Customer Comments</h2>
       <div class="reviews">
         <div>
           <div class="customer-comments">
-            <p class="customer-review">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda corrupti dolorem et facere commodi atque itaque, necessitatibus cupiditate repudiandae voluptas nam quam.</p>
+            <p class="customer-review">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda corrupti
+              dolorem et facere commodi atque itaque, necessitatibus cupiditate repudiandae voluptas nam quam.</p>
             <p class="customer-name">- John Textor</p>
           </div>
         </div>
         <div>
           <div class="customer-comments">
-            <p class="customer-review">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda corrupti dolorem et facere commodi atque itaque, necessitatibus cupiditate repudiandae voluptas nam quam.</p>
+            <p class="customer-review">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda corrupti
+              dolorem et facere commodi atque itaque, necessitatibus cupiditate repudiandae voluptas nam quam.</p>
             <p class="customer-name customer-name-2">- Cristiano Ronaldo</p>
           </div>
         </div>
       </div>
     </section>
+    <!-- Customer Comments -->
+    <!-- Coupon -->
     <section>
       <div class="coupon">
         <span class="coupon-text">Free shipping all over the country</span>
@@ -104,9 +112,13 @@
         </div>
       </div>
     </section>
+    <!-- End Coupon -->
+    <!-- Footer -->
     <footer>
       <h3 class="footer-text">© 2022 Suits | All Rights Reserved.</h3>
     </footer>
+    <!-- End Footer -->
+    <script src="app.js"></script>
   </body>
 
 </html>
